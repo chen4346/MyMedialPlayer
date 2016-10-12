@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyMedialPlayer</string>
+    <string name="splash_load_text">正在启动...</string>
 </resources>
