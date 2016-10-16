@@ -1,10 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.chenapp.mymedialplayer.MainActivity"
-    android:background="#0ff">
+    >
+    <include
+        layout="@layout/title_bar"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/fl_pager">
 
-</RelativeLayout>
+    </FrameLayout>
+    <RadioGroup
+        android:id="@+id/rg_bottomtag"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_localvideo"
+            style="@style/tag_style"
+            android:text="@string/tag_local_video"
+            android:drawableTop="@drawable/tag_drawable_localvideo"
+            />
+        <RadioButton
+            android:id="@+id/rb_localmusic"
+            style="@style/tag_style"
+            android:text="@string/tag_local_music"
+            android:drawableTop="@drawable/tag_drawable_localmusic"
+            />
+        <RadioButton
+            android:id="@+id/rb_netvideo"
+            style="@style/tag_style"
+            android:text="@string/tag_net_video"
+            android:drawableTop="@drawable/tag_drawable_netvideo"
+            />
+        <RadioButton
+            android:id="@+id/rb_netmusic"
+            style="@style/tag_style"
+            android:text="@string/tag_net_music"
+            android:drawableTop="@drawable/tag_drawable_netmusic"
+            />
+    </RadioGroup>
+</LinearLayout>

@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">MyMedialPlayer</string>
+    <string name="app_name">手机影音</string>
     <string name="splash_load_text">正在启动...</string>
+    <string name="tag_local_video">本地视频</string>
+    <string name="tag_local_music">本地音乐</string>
+    <string name="tag_net_video">网络视频</string>
+    <string name="tag_net_music">网络音乐</string>
+    <string name="title_text">全网搜索</string>
+
 </resources>
