@@ -6,5 +6,6 @@
     <string name="tag_net_video">网络视频</string>
     <string name="tag_net_music">网络音乐</string>
     <string name="title_text">全网搜索</string>
+    <string name="load_error_text">暂时未发现数据</string>
 
 </resources>
